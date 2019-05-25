@@ -1,7 +1,8 @@
 def reformat_languages(languages)
   new_languages = {}
   languages.each do |style, language|
-    new_languages = language.map do
+    language.each do |key, value|
+      new_languages.push(key => value)
     end
   end
   new_languages
